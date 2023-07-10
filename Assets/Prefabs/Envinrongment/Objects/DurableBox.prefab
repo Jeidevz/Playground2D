@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1420430424783822017
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8308103848962014601, guid: a1dbc05516c0c2a4f90a1a2235a4a01b, type: 3}
+      propertyPath: m_Name
+      value: DurableBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308103848962014602, guid: a1dbc05516c0c2a4f90a1a2235a4a01b, type: 3}
+      propertyPath: m_Color.b
+      value: 0.1981132
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308103848962014602, guid: a1dbc05516c0c2a4f90a1a2235a4a01b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.1981132
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308103848962014602, guid: a1dbc05516c0c2a4f90a1a2235a4a01b, type: 3}
+      propertyPath: m_Color.r
+      value: 0.1981132
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308103848962014605, guid: a1dbc05516c0c2a4f90a1a2235a4a01b, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308103848962014605, guid: a1dbc05516c0c2a4f90a1a2235a4a01b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308103848962014605, guid: a1dbc05516c0c2a4f90a1a2235a4a01b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308103848962014605, guid: a1dbc05516c0c2a4f90a1a2235a4a01b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308103848962014605, guid: a1dbc05516c0c2a4f90a1a2235a4a01b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308103848962014605, guid: a1dbc05516c0c2a4f90a1a2235a4a01b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308103848962014605, guid: a1dbc05516c0c2a4f90a1a2235a4a01b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308103848962014605, guid: a1dbc05516c0c2a4f90a1a2235a4a01b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308103848962014605, guid: a1dbc05516c0c2a4f90a1a2235a4a01b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308103848962014605, guid: a1dbc05516c0c2a4f90a1a2235a4a01b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308103848962014605, guid: a1dbc05516c0c2a4f90a1a2235a4a01b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a1dbc05516c0c2a4f90a1a2235a4a01b, type: 3}
+--- !u!1 &6987952320638755144 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8308103848962014601, guid: a1dbc05516c0c2a4f90a1a2235a4a01b, type: 3}
+  m_PrefabInstance: {fileID: 1420430424783822017}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1022079427932663023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6987952320638755144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c34d0b3799a1f43b75c2c114b5df86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  durability: 10
+--- !u!114 &2540904092522843493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6987952320638755144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7694d6c78d26fd5438e6b2b6c5d83d1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetDestroyObject: {fileID: 6987952320638755144}
+  durability: {fileID: 1022079427932663023}
